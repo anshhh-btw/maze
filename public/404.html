@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting...</title>
+  <script>
+    // Save the full path (e.g., /maze/play/STRING) to sessionStorage
+    sessionStorage.redirect = location.href;
+    // Redirect to the root of your repo (index.html)
+    // Replace '/maze/' with your actual repo name if different
+    location.replace('/maze/'); 
+  </script>
+</head>
+<body>
+  Redirecting to main app...
+</body>
+</html>   
