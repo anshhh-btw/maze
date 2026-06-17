@@ -1,0 +1,57 @@
+#algorithms>h1 {
+    margin: 30px 0;
+    font-family: Syne;
+    text-align: center;
+}
+
+#algoContent{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+#algoMiddle{
+    border: 2px solid var(--limeGlow);
+    box-shadow: 0 0 5px var(--limeGlow);
+    border-radius: 50%;
+    height: 200vh;
+    margin-bottom: 30px;
+}
+
+#algoLeft,#algoRight{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 35px;
+    >h3{
+        font-family: Syne;
+    }
+    .algoCard{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: auto;
+        border: 2px solid var(--limeGlow);
+        border-radius: 7.5px;
+    }
+    .algoHead{
+        padding: 10px;
+        background-color: #39FF14;
+        color: var(--black);
+        font-family: jetbrains;
+        font-weight: 600;
+    }
+    .algoCardContent{
+        padding: 15px;
+        font-family: poppins;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .algoName{
+        font-size: 120%;
+    }
+}
+

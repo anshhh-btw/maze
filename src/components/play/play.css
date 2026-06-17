@@ -1,0 +1,58 @@
+#play {
+    height: 100%;
+    max-height: 90vh;
+    max-width: 100vw;
+    overflow: scroll;
+    margin: auto;
+
+    #canvasBox {
+        height: 100%;
+    }
+}
+
+#play::-webkit-scrollbar{
+    display: none;
+}
+
+#celebration{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 10px;
+    font-family: Syne;
+
+    >#cupImage, #cupImage>img{
+        width: 400px;
+    }
+
+    #celebrationButtons{
+        display: flex;
+        gap: 20px;
+        button{
+            background-color: transparent;
+            border: none;
+            border: 2px solid var(--limeGlow);
+            color: var(--limeGlow);
+            font-family: poppins;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        button:hover{
+            transform: scale(0.9);
+            color: var(--black);
+            background-color: var(--limeGlow);
+        }
+    }
+}
+
+#celebration{
+    display: none;
+}
+
+#playPage{
+    margin: 40px 20px;
+}

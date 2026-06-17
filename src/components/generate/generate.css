@@ -1,0 +1,348 @@
+#mazeBox {
+    height: 400px;
+    width: 400px;
+    max-width: 400px;
+    max-height: 400px;
+    overflow: scroll;
+}
+
+#mazeBox::-webkit-scrollbar {
+    display: none;
+}
+
+#generate {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 9fr;
+    gap: 40px;
+
+    button {
+        cursor: pointer;
+    }
+
+}
+
+#generateLeft {
+    padding: 20px;
+}
+
+#mazeControl {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+
+    >div {
+        width: 100%;
+    }
+}
+
+#mazeControl button {
+    background-color: transparent;
+    font-family: jetbrains;
+    color: var(--white);
+    border: 2px solid var(--limeGlow);
+}
+
+#mazeControlTop {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#controlRewind {
+    width: 100px;
+    padding: 5px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+#controlRewind:hover {
+    transform: scale(0.9);
+}
+
+
+#controlFor {
+    width: 300px;
+    padding: 5px 15px;
+    font-size: 1.1em;
+    transition: all 0.3s ease;
+}
+
+#controlFor:hover {
+    transform: scale(0.9);
+}
+
+#frameController {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    >button {
+        width: 100%;
+        border: none;
+        padding: 5px;
+        transition: all 0.3s ease;
+    }
+
+    >button:hover {
+        transform: scale(0.9);
+    }
+
+    #controlPrevious {
+        border: 2px solid var(--limeGlow);
+    }
+
+    #controlNext {
+        border: 2px solid var(--limeGlow);
+    }
+
+    #controlPause {
+        border: 2px solid var(--limeGlow);
+    }
+}
+
+#controlSlider {
+    appearance: none;
+    width: 100%;
+    background-color: transparent;
+    outline: none;
+}
+
+#controlSlider::-webkit-slider-runnable-track {
+    background-color: transparent;
+    width: 100%;
+    border: 2px solid var(--limeGlow);
+}
+
+#controlSlider::-webkit-slider-thumb {
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    background-color: var(--limeGlow);
+}
+
+#framesInfo {
+    font-family: jetbrains;
+    display: flex;
+    justify-content: space-between;
+}
+
+#generateRight {
+    font-family: jetbrains;
+    padding: 20px;
+
+    >form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    >form>div {
+        border: 2px solid var(--limeGlow);
+        border-top-width: 4px;
+        border-radius: 5px;
+
+        >h3 {
+            padding: 7.5px;
+            background-color: var(--darkGrey);
+            color: var(--limeGlow);
+            margin-bottom: 5px;
+            font-weight: 400;
+        }
+    }
+
+    input {
+        background-color: var(--black);
+        border: none;
+        padding: 8px;
+        color: var(--white);
+        font-family: jetbrains;
+        border-radius: 3px;
+        border: 1px solid #333333;
+        width: 93%;
+    }
+}
+
+#mazeSettings {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px;
+    padding: 8px;
+    padding-top: 0;
+
+    >div {
+        background-color: var(--darkGrey);
+        padding: 8px;
+        border-radius: 3px;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+
+        >div {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 8px;
+        }
+    }
+
+    select {
+        background-color: var(--black);
+        font-family: jetbrains;
+        width: max-content;
+        color: var(--white);
+        padding: 8px;
+        border-radius: 3px;
+        border: 1px solid #333333;
+    }
+}
+
+#imageSettings {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    gap: 5px;
+    padding-top: 0;
+}
+
+#imageSettingsBottom {
+    display: flex;
+    gap: 8px;
+}
+
+#startEndColorSettings {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background-color: var(--darkGrey);
+    padding: 8px;
+    width: 100%;
+    border-radius: 3px;
+    input{
+        width: 50px;
+    }
+}
+
+#colorProfile>div {
+    display: flex;
+    gap: 10px;
+}
+
+#imagePixelSettings {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+}
+
+#imagePixelSettings>div {
+    background-color: var(--darkGrey);
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    border-radius: 3px;
+}
+
+#colorProfile {
+    display: flex;
+    border-radius: 3px;
+    flex-direction: column;
+    gap: 6px;
+    background-color: var(--darkGrey);
+    padding: 8px;
+
+    >div>div {
+        padding: 4px 6px;
+        display: flex;
+        gap: 30px;
+        border: 1px solid var(--white);
+        border-radius: 5px;
+        align-items: center;
+        font-size: 0.9em;
+
+        input {
+            appearance: none;
+            background-color: transparent;
+            width: 50px;
+        }
+
+    }
+}
+
+#formButtons {
+    border: none !important;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+
+    >button {
+        background-color: var(--limeGlow);
+        color: var(--black);
+        border: none;
+        font-family: jetbrains;
+        font-weight: bold;
+        padding: 8px 0;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+        border: 2px solid var(--limeGlow);
+    }
+
+    >button:hover {
+        transform: scale(0.95);
+        border: 2px solid var(--limeGlow);
+        background-color: transparent;
+        color: var(--limeGlow);
+    }
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    display: none;
+}
+
+input[type='color']{
+    cursor: pointer;
+}
+
+@media (max-width: 1050px) {
+    #generate{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 730px){
+    #imageSettingsBottom{
+        flex-direction: column;
+        >div{
+            width: 97%;
+        }
+    }
+}
+
+@media (max-width: 700px){
+    #imagePixelSettings{
+        display: flex;
+        flex-direction: column;
+    }
+    #imageSettingsBottom>div{
+        width: 96%;
+    }
+}
+
+@media (max-width: 600px){
+    #mazeSettings{
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,10 @@
+.screen-fade-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9998;
+    pointer-events: none;
+    background: linear-gradient(to bottom,rgba(0, 0, 0, 0) 15%, rgba(0, 0, 0, 0) 85%, #000000 100%);
+}

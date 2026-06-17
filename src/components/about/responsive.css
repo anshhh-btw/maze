@@ -1,0 +1,5 @@
+@media (max-width: 860px){
+    #block2 .blockContent{
+        flex-direction: column;
+    }
+}

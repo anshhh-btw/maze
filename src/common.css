@@ -1,0 +1,61 @@
+@font-face {
+    font-family: Megrim;
+    src: url(./assets/fonts/Megrim/Megrim-Regular.ttf);
+}
+
+@font-face {
+    font-family: Quicksand;
+    src: url(./assets/fonts/Quicksand/Quicksand-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Jakarta;
+    src: url(./assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(./assets/fonts/Poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: Syne;
+    src: url(./assets/fonts/Syne/Syne-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Spacegrotesk;
+    src: url(./assets/fonts/Space_Grotesk/SpaceGrotesk-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Monoton;
+    src: url(./assets/fonts/Monoton/Monoton-Regular.ttf);
+}
+
+@font-face {
+    font-family: Jetbrains;
+    src: url(./assets/fonts/JetBrains_Mono/JetBrainsMono-VariableFont_wght.ttf);
+}
+
+:root{
+    --black: #121214;
+    --darkGrey: #222222;
+    --limeGlow: #39FF14;
+    --limeViolet: #8A2BE2;
+    --white: #F4F4F6;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--black);
+    color: var(--white);
+}
+
+html::-webkit-scrollbar{
+    display: none;
+}

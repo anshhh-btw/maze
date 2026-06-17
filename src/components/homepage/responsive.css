@@ -1,0 +1,79 @@
+@media (max-width: 1060px) {
+    #section1 {
+        flex-direction: column-reverse;
+        text-align: center;
+
+        >div {
+            width: 70%;
+        }
+
+        h1 {
+            font-size: 2.3em;
+        }
+
+        h3 {
+            font-size: 1em;
+        }
+
+        #section1left {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        #section1right {
+            margin-top: 75px;
+        }
+    }
+
+    #section4 {
+        width: 100%;
+        #cardsContainer {
+            flex-direction: column;
+            align-items: center;
+        }
+        .card{
+            width: 70%;
+        }
+    }
+}
+
+@media (max-width: 800px){
+    footer{
+        gap: 20px;
+        h3{
+            text-align: center;
+        }
+    }
+    #footerDown{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+        gap: 20px;
+        >div{
+            width: 100%;
+            padding: 0;
+        }
+        #footerLeft{
+            justify-content: center;
+            padding: 0;
+        }
+        a{
+            margin: auto;
+            text-align: center;
+            width: 100%;
+        }
+        #footerRight{
+            padding: 0;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    #qoute{
+        padding: 0 10px;
+    }
+}

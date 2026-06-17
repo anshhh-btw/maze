@@ -1,0 +1,258 @@
+#section1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 30px;
+    height: 90vh;
+
+    >div {
+        width: 35%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    >#section1left {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+}
+
+#section1left h1 {
+    font-family: Syne;
+    font-weight: 700;
+    font-size: 4.2vw;
+}
+
+#section1left h3 {
+    font-family: Poppins;
+    font-weight: 100;
+    font-size: 1.2vw;
+}
+
+#section1left button {
+    padding: 7px 21px;
+    font-family: Poppins;
+    border-radius: 30px;
+    font-size: 1em;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: 2px solid var(--limeGlow);
+    background-color: var(--limeGlow);
+    color: var(--black);
+    font-weight: bold;
+}
+
+#section1left button:hover {
+    transform: scale(1.1);
+    color: var(--white);
+    background-color: transparent;
+    font-weight: 100;
+    box-shadow: 0 0 10px var(--limeGlow);
+}
+
+#section2 {
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+    gap: 20px;
+
+    >h1 {
+        font-family: Syne;
+        font-size: 2.2em;
+        color: var(--limeGlow);
+        text-align: center;
+    }
+
+    >p {
+        max-width: 800px;
+        font-family: poppins;
+        text-align: center;
+        line-height: 1.6;
+    }
+
+    span {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+
+#section3 {
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+    gap: 20px;
+
+    >h1 {
+        font-family: Syne;
+        font-size: 2.2em;
+        color: var(--limeGlow);
+        text-align: center;
+    }
+}
+
+.timelineControls {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+
+.timelineLine {
+    border: 2px solid var(--limeGlow);
+    height: 100px;
+}
+
+.timelineDot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid var(--limeGlow);
+}
+
+.timelineDot:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 5px var(--limeGlow);
+    background-color: var(--limeGlow);
+}
+
+#timelineUp .timelineDot {
+    background-image: url(../../assets/svgs/arrowUp.svg);
+    background-size: cover;
+}
+
+#timelineDown .timelineDot {
+    background-image: url(../../assets/svgs/arrowDown.svg);
+    background-size: cover;
+}
+
+#timelineDown {
+    flex-direction: column-reverse;
+}
+
+#timelineCard {
+    font-family: poppins;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+
+    >h3 {
+        font-size: 120%;
+        color: var(--limeGlow);
+    }
+}
+
+@keyframes ComeAndGo {
+    0% {
+        opacity: 1;
+    }
+
+    49% {
+        opacity: 0;
+        transform: translate(0, -100%);
+    }
+
+    52% {
+        transform: translate(0, 100%);
+    }
+
+    100% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+
+.timelineCardAnimate {
+    animation: ComeAndGo 3s ease reverse;
+}
+
+.timelineCardAnimateReverse {
+    animation: ComeAndGo 3s ease;
+}
+
+#section4 {
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    gap: 50px;
+
+    >h1 {
+        font-family: Syne;
+        font-size: 2.2em;
+        color: var(--limeGlow);
+        text-align: center;
+    }
+
+    >#cardsContainer {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 50px;
+    }
+}
+
+.card {
+    text-align: left;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+
+    h3 {
+        font-family: Poppins;
+        color: var(--limeGlow);
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-family: Poppins;
+    }
+
+    a {
+        white-space: nowrap;
+        font-family: Poppins;
+        font-size: 90%;
+        width: min-content;
+    }
+}
+
+.card:hover {
+    border: 2px solid var(--limeGlow);
+}
+
+#section1right{
+    img,#cupImage{
+        width: 200px!important;
+    }
+    h1{
+        font-size: 1em;
+    }
+}
