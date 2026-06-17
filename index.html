@@ -5,6 +5,16 @@
     <link rel="icon" type="image/svg+xml" href="/maze/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Maze | Home</title>
+
+    <script>
+      (function () {
+        const redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect !== location.href) {
+          history.replaceState(null, null, redirect);
+        }
+      })();
+    </script>
     <script type="module" crossorigin src="/maze/assets/index-CpdRDHuW.js"></script>
     <link rel="stylesheet" crossorigin href="/maze/assets/index-D8VrXoPm.css">
   </head>
